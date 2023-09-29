@@ -54,7 +54,7 @@ const createTicket = asyncHandler(async(req,res) =>{
 
     if(!product || !description){
         res.status(400)
-        throw new Error('User not found')
+        throw new Error('Enter product and description')
     }
     
 
